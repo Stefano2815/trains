@@ -1,0 +1,46 @@
+body {
+
+	  background: url('../images/thomas.gif') no-repeat center center fixed;
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        background-size: cover;
+	        -o-background-size: cover;
+
+	}
+
+
+th {
+	font-size: 20px;
+	text-align: center;
+	background-color: ;
+}
+.panel-heading, h4 {
+	font-size: 30px;
+	text-align: center;
+
+
+
+}
+td {
+	text-align: center;
+
+}
+label {
+  background-color: #808080
+  font-size: 16px;
+}
+.jumbotron, #submitButton {
+	background-color:	#0080ff;
+	background: ;
+	opacity: 0.5;
+
+}
+
+button {
+	font-size: 20px ;
+	text-align: center ;
+}
+button:hover {
+	background-color: 	#FFFF00 ;
+	text-transform: uppercase;
+}
