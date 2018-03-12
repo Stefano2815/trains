@@ -25,11 +25,6 @@ event.preventDefault();
 		tFirst: firstTime,
 		tfreq: frequency,
 
-
-
-
-
-
 	}
 	database.ref().push(newTrains)
 
@@ -48,28 +43,14 @@ event.preventDefault();
 	return false;
 });
 
-database.ref().on('child_added', function(childSnapshot){
+  database.ref().on('child_added', function(childSnapshot){
 
-
-console.log(childSnapshot.val());
-
-
+  console.log(childSnapshot.val());
 
  	var trainName = childSnapshot.val().name;
  	var destination = childSnapshot.val().tdestination;
 	var firstTime = childSnapshot.val().tFirst;
 	var frequency = childSnapshot.val().tfreq;
-
-
-
-
-
-
-
-
-
-
-
 
 	console.log(destination);
  	console.log(firstTime);
@@ -78,7 +59,7 @@ console.log(childSnapshot.val());
 	var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
 	console.log(firstTimeConverted);
 
- var currentTime = moment();
+  var currentTime = moment();
 	console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"));
 
 	var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
